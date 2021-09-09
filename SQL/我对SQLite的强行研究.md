@@ -1,10 +1,19 @@
-> 写在前面
-> 本文是我之前对SQLite的学习分享PPT的一次整理，文末附带PPT与源码的GitHub下载地址
+[TOC]
+
+
+## 写在前面
+
+```
+本文是我之前对SQLite的学习分享PPT的一次整理，文末附带PPT与源码的GitHub下载地址
+```
 
 ![嵌入式关系型数据库SQLite](http://upload-images.jianshu.io/upload_images/2048485-164b30f9739cfd40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 存储类型
-> 五种存储类型：blob、text、real、integer以及null
+
+```
+五种存储类型：blob、text、real、integer以及null
+```
 
 - blob
 二进制对象，最大长度可自定义，默认为1000,000,000 字节
@@ -31,7 +40,11 @@ SQLite不存在数据类型的限制，只有**存储类型**的区别。比如�
 |null|null指针|null指针|0.0|0|--|
 
 ### 亲缘类型
-> 为了和其他DBMS以及SQL标准兼容，在CREATE TABLE中指定列类型，SQLite提出列相似性（Column Affinity）的概念，即列的属性或叫亲缘类
+
+```
+为了和其他DBMS以及SQL标准兼容，在CREATE TABLE中指定列类型，
+SQLite提出列相似性（Column Affinity）的概念，即列的属性或叫亲缘类
+```
 
 |声明类型|亲缘类|转换规则|
 |:--|:--|:--|
@@ -75,12 +88,18 @@ commit;
 
 语法：
 1. 语句级（可覆盖对象级的冲突解决手段）
+
+```sql
 insert/update/create  or [resolution] table/index [tbl_name/idx_name] ……
 [resolution]： replace、ignore、fail、abort、rollback
+```
 
 2. 对象级（定义表格时）
+
+```sql
 create table/index [tbl_name/idx_name] ([field_name] [format] [constraint] on conflict [resolution]);
 [constraint]：unique、not null……
+```
 
 ```shell
 // 示例
