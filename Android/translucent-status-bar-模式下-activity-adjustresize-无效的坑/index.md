@@ -1,10 +1,19 @@
+[TOC]
+
+# TranslucentStatusBar 模式下 ActivityAdjustResize 无效的坑
+
 ## 背景
 
-一般情况下通过 AndroidManifest.xml 注册 Activity 时设置 `android:windowSoftInputMode="adjustResize"` 可以让软键盘与 Activity 界面的高度自适应，但是在 translucent status bar 的情况下无效。
+```
+一般情况下，通过`AndroidManifest.xml`注册`Activity`时设置
+`android:windowSoftInputMode="adjustResize"`可以让软键盘
+与`Activity`界面的高度自适应。
+但是在`translucent status bar`的情况下无效。
+```
 
 参考文章：
-[参考一](https://blog.csdn.net/u010255127/article/details/49308775)
-[参考二](https://blog.csdn.net/qq_24737357/article/details/51645032)
+1. [CSDN 参考一](https://blog.csdn.net/u010255127/article/details/49308775)
+2. [CSDN 参考二](https://blog.csdn.net/qq_24737357/article/details/51645032)
 
 ## 解决
 

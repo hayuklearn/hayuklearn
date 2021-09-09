@@ -4,9 +4,10 @@
 
 ## 参考链接
 
-[阮一峰《跨域资源共享 CORS 详解》](http://www.ruanyifeng.com/blog/2016/04/cors.html)
-[Mozilla《跨源资源共享（CORS）》](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS)
-[博客园《Flutter web 踩坑关于浏览器的跨域的深思》](https://www.cnblogs.com/lizhanqi/p/13564660.html)
+1. [阮一峰《跨域资源共享 CORS 详解》](http://www.ruanyifeng.com/blog/2016/04/cors.html)
+2. [Mozilla《跨源资源共享（CORS）》](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS)
+3. [博客园《Flutter web 踩坑关于浏览器的跨域的深思》](https://www.cnblogs.com/lizhanqi/p/13564660.html)
+4. [UNI-APP H5 跨域问题解决方案](https://ask.dcloud.net.cn/m/article/35267)
 
 ## 概念
 
@@ -63,11 +64,18 @@ st=>start: 浏览器开始
 cond-is-simple-request=>condition: 是否简单请求
 op01=>operation: 增加一个Origin头部
 op02=>operation: 发送给服务端
-cond-is-origin-allow=>condition: Origin是否在许可范围内
-op03=>operation: 服务端响应包含Access-Control-Allow-Origin、Access-Control-Allow-Credentials、Access-Control-Expose-Headers、Content-Type
-op04=>operation: 服务端响应不包含Access-Control-Allow-Origin
+cond-is-origin-allow=>condition: Origin
+是否在许可范围内
+op03=>operation: 服务端响应包含
+Access-Control-Allow-Origin
+Access-Control-Allow-Credentials
+Access-Control-Expose-Headers
+Content-Type
+op04=>operation: 服务端响应不包含
+Access-Control-Allow-Origin
 op05=>operation: 预检preflight
-cond-preflight=>condition: Origin是否在许可范围内
+cond-preflight=>condition: Origin
+是否在许可范围内
 op06=>operation: 正常请求
 op07=>operation: 跨域报错
 
