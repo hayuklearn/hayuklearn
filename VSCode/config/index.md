@@ -2,6 +2,8 @@
 
 # Visual Studio Code 配置
 
+> C:\Users\hayuk\AppData\Roaming\Code\User\settings.json
+
 ## 1. 路径提示插件 path-intellisense
 
 ![](./img/01.webp)
@@ -43,3 +45,8 @@
 ```
 
 [CSDN 链接](https://blog.csdn.net/gaoxiaoba/article/details/118191161)
+
+## 4. 等宽字体配置
+
+[简书](https://www.jianshu.com/p/46fdb5d275a6#comments)
+[GitHub](https://github.com/be5invis/Sarasa-Gothic/releases)
