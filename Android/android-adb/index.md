@@ -12,6 +12,10 @@
 
 - adb shell am start -a android.intent.action.VIEW -d "http://192.168.101.4/get_data.xml" // 浏览器打开页面
 
+## 连接 WiFi
+
+- adb connect 192.168.20.162:5555
+
 ## emulator
 
 - emulator @emalator-name
@@ -37,3 +41,11 @@ adb shell wm density 320
 
 6. 重置可用 dpi 如下命令
 adb shell wm density reset
+
+7. 录屏
+adb shell screenrecord sdcard/test01.mp4
+adb pull sdcard/test01.mp4
+
+8. 截屏
+adb shell screencap -p sdcard/screen.png
+adb pull sdcard/screen.png

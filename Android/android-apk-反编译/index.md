@@ -1,18 +1,24 @@
 [TOC]
 
-# Android APK 反编译
+## Android APK 反编译
 
-## 方式一
+### 方式一
 
 使用 ApkTool
 ```
 java -jar apktool.jar d android-app.apk
 ```
-## 方式二
+### 方式二
 
 使用 dex2jar
 ```
-d2j-dex2jar.bat classes.dex
+d2j-dex2jar.bat classes.dex -o output-name.jar
+```
+
+## 阅读源码
+
+```
+jadx-gui.bat
 ```
 
 [参考一](https://www.cmonbaby.com/posts/android_decompile_tool.html)
