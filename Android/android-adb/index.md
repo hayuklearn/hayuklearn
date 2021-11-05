@@ -49,3 +49,6 @@ adb pull sdcard/test01.mp4
 8. 截屏
 adb shell screencap -p sdcard/screen.png
 adb pull sdcard/screen.png
+
+9. 输入文字
+adb shell input text "blabla"
