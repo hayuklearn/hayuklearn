@@ -9,6 +9,15 @@
 - adb -s [device-name] shell
 
 - adb shell dumpsys activity | grep "mResume" // 显示当前界面类名
+- adb shell dumpsys activity activities       // 查看 Activity 组件信息
+- adb shell dumpsys activity services         // 查看 Service 组件信息
+- adb shell dumpsys activity providers        // 产看 ContentProvider 组件信息
+- adb shell dumpsys activity broadcasts       // 查看 BraodcastReceiver 信息
+- adb shell dumpsys activity intents          // 查看 Intent 信息
+- adb shell dumpsys activity processes        // 查看进程信息
+
+- // 查看运行中的服务
+- adb shell dumpsys activity services | grep ServiceRecord | awk '{print $4}' | sed 's/}//1g'
 
 - adb shell am start -a android.intent.action.VIEW -d "http://192.168.101.4/get_data.xml" // 浏览器打开页面
 

@@ -26,3 +26,21 @@ git ls-remote --tags
 git checkout TAG_NAME
 git checkout -b BRANCH_NAME TAG_NAME
 ```
+
+## 回退提交
+
+```
+git reset --soft HEAD^
+```
+
+or
+
+```
+git reset --hard HEAD^
+```
+
+然后
+
+```
+git push -f
+```
