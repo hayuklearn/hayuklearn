@@ -23,6 +23,15 @@
 
 ## 连接 WiFi
 
+1. 开启网络 ADB 调试
+
+```shell
+adb shell
+setprop service.adb.tcp.port 5555
+```
+
+2. 连接
+
 - adb connect 192.168.20.162:5555
 
 ## emulator
@@ -61,3 +70,11 @@ adb pull sdcard/screen.png
 
 9. 输入文字
 adb shell input text "blabla"
+
+10. 文件传输
+adb pull sdcard/xxx
+adb push local-target-file sdcard/xxx
+
+
+11. 启动 APP
+$ adb shell am start -n "cn.lyy.facepay/com.lyy.diagnostic.DiagnosticActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
