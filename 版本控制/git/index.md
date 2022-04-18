@@ -27,6 +27,12 @@ git checkout TAG_NAME
 git checkout -b BRANCH_NAME TAG_NAME
 ```
 
+## 检出远端新分支
+
+```
+git checkout -b dev_intelligent origin/dev_intelligent
+```
+
 ## 回退提交
 
 ```
