@@ -78,3 +78,6 @@ adb push local-target-file sdcard/xxx
 
 11. 启动 APP
 $ adb shell am start -n "cn.lyy.facepay/com.lyy.diagnostic.DiagnosticActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+
+12. 导出 APK
+
